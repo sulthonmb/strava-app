@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: #000;
+  background: #fff;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.bg-orange {
+  background-color: rgb(255 69 42);
+}
+
+.border-orange {
+  border: 1px solid rgb(255 69 42);
+}
+
+.bg-white:hover {
+  border: 1px solid rgb(255 69 42);
+  background-color:rgb(255 69 42) !important;
+}
+
+.bg-orange:hover {
+  background-color: white;
+}
+
+/* .border-orange:hover {
+  border: 1px solid white;
+  border-color: rgb(255 69 42);
+} */
+
+.text-btn-white {
+  color: white;
+}
+
+.text-btn-white:hover {
+  color: rgb(255 69 42);
+}
+
+.rounded-btn-full {
+  border-radius: 9999px;
+}
+
+.text-btn-orange {
+  color: rgb(255 69 42);
+}
+
+.text-btn-orange:hover {
+  color: white;
+}
